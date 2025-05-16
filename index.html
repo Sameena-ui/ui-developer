@@ -7,8 +7,117 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <h1>hello</h1>
-    <p>welcome to HTML</p>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Dashboard</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fc;
+            margin: 0;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #2c3e50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #e9ecef;
+        }
+        .severity-low {
+            color: #27ae60;
+        }
+        .severity-medium {
+            color: #f39c12;
+        }
+        .severity-high {
+            color: #e74c3c;
+        }
+        .severity-critical {
+            color: #c0392b;
+            font-weight: bold;
+        }
+        .remediation-time {
+            font-style: italic;
+            color: #7f8c8d;
+        }
+        .finding-date {
+            color: #95a5a6;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Security Dashboard</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Asset</th>
+                <th>Finding</th>
+                <th>Severity</th>
+                <th>Estimated Remediation Time</th>
+                <th>Finding Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>compute-machine1</td>
+                <td>Open to public access on port 22</td>
+                <td class="severity-low">Low</td>
+                <td class="remediation-time">15 mins</td>
+                <td class="finding-date">April 10, 2025</td>
+            </tr>
+            <tr>
+                <td>compute-machine2</td>
+                <td>Open public access on insecure port 80</td>
+                <td class="severity-medium">Medium</td>
+                <td class="remediation-time">30 mins</td>
+                <td class="finding-date">April 12, 2025</td>
+            </tr>
+            <tr>
+                <td>printer1</td>
+                <td>WiFi access is openly available</td>
+                <td class="severity-high">High</td>
+                <td class="remediation-time">1 hour</td>
+                <td class="finding-date">April 14, 2025</td>
+            </tr>
+            <tr>
+                <td>printer1</td>
+                <td>The device is always on</td>
+                <td class="severity-critical">Critical</td>
+                <td class="remediation-time">Immediate</td>
+                <td class="finding-date">April 15, 2025</td>
+            </tr>
+            <tr>
+                <td>compute-machine2</td>
+                <td>Allows connecting external USB storage devices, increasing the risk of virus infection</td>
+                <td class="severity-low">Low</td>
+                <td class="remediation-time">15 mins</td>
+                <td class="finding-date">April 16, 2025</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
+
     
 </body>
 </html>
